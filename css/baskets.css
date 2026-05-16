@@ -1,0 +1,13 @@
+.produits{
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    background: white;
+    border-radius: 10px;
+}
+
+.product{
+    width: 30%;
+    margin-right: 30px;
+    object-fit: cover;
+}
