@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sacs_femmes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chaussure.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">ShopPro</div>
+
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Rechercher..." onkeyup="searchProducts()">
+    <button>🔍</button>
+  </div>
+
+  <div class="header-icons">
+    <span>Commandes</span>
+    <span id="cart-icon">🛒 (0)</span>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html">Accueil</a>
+  <a href="hommes2.html">Hommes</a>
+  <a href="femmes.html">Femmes</a>
+  <a href="chaussure.html">Chaussures</a>
+  <a href="sacs.html">Sac femme</a>
+</nav>
+    
+<div class="section-box">
+  <h2>sacs femmes</h2>
+
+  <div class="product-grid1">
+
+    <div class="product1">
+      <img src="../Images/IMG-20260505-WA0043.jpg">
+      <p>Sac élégant parfait pour toutes les occasions</p>
+      <h4>60$</h4>
+      <button onclick="addToCart('Sac femme', 60, '../Images/IMG-20260505-WA0043.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260506-WA0000.jpg">
+      <p>Desing moderne avec grande capacité interieure</p>
+      <h4>40$</h4>
+      <button onclick="addToCart('Sac femme', 40, '../Images/IMG-20260506-WA0000.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260505-WA0025.jpg">
+      <p>Sac tendance idéal pour vos sorties quotidienne</p>
+      <h4>60$</h4>
+      <button onclick="addToCart('Sac femme', 60, '../Images/IMG-20260505-WA0025.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260505-WA0032.jpg">
+      <p>Style chic avec finition premium</p>
+      <h4>40$</h4>
+      <button onclick="addToCart('Sac femme', 40, '../Images/chaussures-basket-suspended-blanc.webp')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260506-WA0011.jpg">
+      <p>Sac pratique et léger pour femme active</p>
+      <h4>15$</h4>
+      <button onclick="addToCart('Sac femme', 15, '../Images/IMG-20260506-WA0011.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260506-WA0013.jpg">
+      <p>Elégance et confort dans seul accessoire</p>
+      <h4>30$</h4>
+      <button onclick="addToCart('Sac femme', 30, '../Images/IMG-20260506-WA0013.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260506-WA0015.jpg">
+      <p>Sac fashion adapté à tous les styles</p>
+      <h4>20$</h4>
+      <button onclick="addToCart('Sac femme', 20, '../Images/IMG-20260506-WA0015.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260506-WA0045.jpg">
+      <p>Modèle raffiné avec espace de rengement optimal</p>
+      <h4>40$</h4>
+      <button onclick="addToCart('Sac femme', 40, '../Images/IMG-20260506-WA0045.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260506-WA0134.jpg">
+      <p>Sac glamour pour un look unique</p>
+      <h4>20$</h4>
+      <button onclick="addToCart('Sac femme', 20, '../Images/IMG-20260506-WA0134.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260506-WA0014.jpg">
+      <p>Accessoire incontournable pour complete</p>
+      <h4>15$</h4>
+      <button onclick="addToCart('Sac femme', 15, '../Images/IMG-20260506-WA0014.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260506-WA0124.jpg">
+      <p>Sac moderne avec fermeture sécurisée</p>
+      <h4>20$</h4>
+      <button onclick="addToCart('Sac femme', 20, '../Images/IMG-20260506-WA0124.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260506-WA0126.jpg">
+      <p>look luxueux et finition de qualité</p>
+      <h4>20$</h4>
+      <button onclick="addToCart('Sac femme', 20, '../Images/IMG-20260506-WA00126.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260506-WA0133.jpg">
+      <p>Sac compact et très élégant</p>
+      <h4>40$</h4>
+      <button onclick="addToCart('Sac femme', 40, '../Images/IMG-20260506-WA0133.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260507-WA0025.jpg">
+      <p>Design féminin evc détails sophistiqués</p>
+      <h4>20$</h4>
+      <button onclick="addToCart('Sac femme', 20, '../Images/IMG-20260507-WA0043.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260507-WA0022.jpg">
+      <p>Parfait pour le travail ou les sorties</p>
+      <h4>20$</h4>
+      <button onclick="addToCart('Sac femme', 20, '../Images/IMG-20260507-WA0022.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260507-WA0032.jpg">
+      <p>Sac tendance pensé pour le quotodien</p>
+      <h4>30$</h4>
+      <button onclick="addToCart('Sac femme', 30, '../Images/IMG-20260507-WA0032.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260507-WA0033.jpg">
+      <p>Elégance minimaliste et pratique</p>
+      <h4>40$</h4>
+      <button onclick="addToCart('Sac femme', 20, '../Images/IMG-20260507-WA0033.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260507-WA0038.jpg">
+      <p>Modèle chic pour toutes les saisons</p>
+      <h4>10$</h4>
+      <button onclick="addToCart('Sac femme', 10, '../Images/IMG-20260506-WA0038.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+    <div class="product1">
+      <img src="../Images/IMG-20260507-WA0049.jpg">
+      <p>Sac polyvalent avec espace confortable</p>
+      <h4>15$</h4>
+      <button onclick="addToCart('T-shirt Homme', 15, '../Images/IMG-20260507-WA0049.jpg')">Ajouter au panier 🛒</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <div>
+      <a href="about.html"><h4>À propos</h4></a>
+      <a href="qui-sommes-nous.html"> <p>Qui sommes-nous</p></a>
+      <a href="carriere.html"><p>Carrières</p></a>
+    </div>
+    </div>
+
+    <div>
+      <a href="aide.html"> <h4>Aide</h4></a>
+     <a href="Livraison.html"><p>Livraison</p></a>
+      <p>Retours</p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>Email : gilbertshonganya@gmail.com</p>
+      <p>Téléphone : +243 816945259</p>
+    </div>
+  </div>
+
+  <p class="copyright">© 2026 ShopPro</p>
+</footer>
+
+<script src="femmes.js"></script>
+
+</body>
+</html>

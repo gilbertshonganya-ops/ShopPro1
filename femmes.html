@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vetements-pour-femmes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="femmes.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">ShopPro</div>
+
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Rechercher..." onkeyup="searchProducts()">
+    <button>🔍</button>
+  </div>
+
+  <div class="header-icons">
+    <span>Commandes</span>
+    <span id="cart-icon">🛒 (0)</span>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html">Accueil</a>
+  <a href="hommes2.html">Hommes</a>
+  <a href="femmes.html">Femmes</a>
+  <a href="chaussure.html">Chaussures</a>
+  <a href="sacs.html">Sac femme</a>
+</nav>
+
+<!-- TITRE -->
+
+<section class="hero-femme">
+  <div class="hero-homme">
+    <h1>Nouvelle Collection</h1>
+    <p>Découvrez les tendances du moment</p>
+    <button>Voir les offres</button>
+  </div>s
+</section>
+
+
+<!-- TRI -->
+<div class="top-bar">
+  <select onchange="sortProducts(this.value)">
+    <option value="default">Trier</option>
+    <option value="low">Prix croissant</option>
+    <option value="high">Prix décroissant</option>
+  </select>
+</div>
+
+<!-- PRODUITS (DIRECT HTML) -->
+ <h2 class="titre-produit">Robe élégante</h2>
+<section class="products" id="product-list">
+
+  <div class="product" data-name="robe elegante" data-price="35">
+    <img src="../Images/IMG_5753_f9162146-10c5-4fa1-aac0-3947e70c5413.jpg">
+    <h4>Robe élégante</h4>
+    <p>35$</p>
+    <button onclick="addToCart('Robe élégante',35,'../Images/IMG_5753_f9162146-10c5-4fa1-aac0-3947e70c5413.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="femme modele" data-price="45">
+    <img src="../Images/Sa5c0919363164e56911e4f5f896a8673Z.jpg">
+    <h4>femme modele</h4>
+    <p>45$</p>
+    <button onclick="addToCart('femme modele',45,'../Images/Sa5c0919363164e56911e4f5f896a8673Z.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Robe" data-price="30">
+    <img src="../Images/175014655320959f7d4177a93403bd48ec1b92c67a_thumbnail_405x552.jpg">
+    <h4>Robe</h4>
+    <p>30$</p>
+    <button onclick="addToCart('Robe',30,'../Images/175014655320959f7d4177a93403bd48ec1b92c67a_thumbnail_405x552.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="robe magic" data-price="25">
+    <img src="../Images/vetements-pour-femmes.jpg">
+    <h4>Robe magic</h4>
+    <p>25$</p>
+    <button onclick="addToCart('robe magic',25,'../Images/vetements-pour-femmes.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Blouse" data-price="50">
+    <img src="../Images/comment-choisir-les-vetements-de-mode-pour-femmes-beautifulshop.jpg">
+    <h4>Blouse</h4>
+    <p>50$</p>
+    <button onclick="addToCart('blouse',50,'../Images/comment-choisir-les-vetements-de-mode-pour-femmes-beautifulshop.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Robe sexy" data-price="30">
+    <img src="../Images/China-Custom-Manufacturer-Wholesale-Fashion-New-Clothing-Women-s-Casual-Ladies-Slim-Sexy-Black-Fashion-Party-Mini-Short-Pencil-Dress.webp">
+    <h4>Robe sexy</h4>
+    <p>30$</p>
+    <button onclick="addToCart('Robe sexy',30,'../Images/China-Custom-Manufacturer-Wholesale-Fashion-New-Clothing-Women-s-Casual-Ladies-Slim-Sexy-Black-Fashion-Party-Mini-Short-Pencil-Dress.webp')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Robe responsable" data-price="25">
+    <img src="../Images/IMG-20260505-WA0057.jpg">
+    <h4>Robe responsable</h4>
+    <p>25$</p>
+    <button onclick="addToCart('Robe responsable',25,'../Images/IMG-20260505-WA0057.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Robe" data-price="50">
+    <img src="../Images/IMG-20260505-WA0059.jpg">
+    <h4>Robe</h4>
+    <p>50$</p>
+    <button onclick="addToCart('Robe',50,'../Images/IMG-20260505-WA0059.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Blouse" data-price="30">
+    <img src="../Images/IMG-20260505-WA0061.jpg">
+    <h4>Blouse</h4>
+    <p>30$</p>
+    <button onclick="addToCart('Blouse',30,'../Images/IMG-20260505-WA0061.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="  Magnifique robe" data-price="25">
+    <img src="../Images/IMG-20260505-WA0047.jpg">
+    <h4>Magnifique robe</h4>
+    <p>25$</p>
+    <button onclick="addToCart('Magnifique robe',25,'../Images/IMG-20260505-WA0047.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Robe" data-price="50">
+    <img src="../Images/IMG-20260505-WA0053.jpg">
+    <h4>Robe</h4>
+    <p>50$</p>
+    <button onclick="addToCart('Robe',50,'../Images/IMG-20260505-WA0053.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="jupe" data-price="30">
+    <img src="../Images/IMG-20260505-WA0056.jpg">
+    <h4>Jupe</h4>
+    <p>30$</p>
+    <button onclick="addToCart('Jupe',30,'../Images/IMG-20260505-WA0056.jpg')">Ajouter au panier</button>
+  </div>
+
+</section>
+
+<h2 class="titre-produit">Robe élégante</h2>
+<section class="products" id="product-list">
+
+  <div class="product" data-name="robe elegante" data-price="35">
+    <img src="../Images/../Images/IMG-20260506-WA0129.jpg">
+    <h4>Robe élégante</h4>
+    <p>35$</p>
+    <button onclick="addToCart('Robe élégante',35,'../Images/IMG-20260506-WA0129.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Robe élégante" data-price="45">
+    <img src="../Images/IMG-20260506-WA0120.jpg">
+    <h4>Robe élégante</h4>
+    <p>45$</p>
+    <button onclick="addToCart('Robe élégante',45,'../Images/IMG-20260506-WA0120.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Robe" data-price="30">
+    <img src="../Images/IMG-20260506-WA0119.jpg">
+    <h4>Robe</h4>
+    <p>30$</p>
+    <button onclick="addToCart('Robe',30,'../Images/IMG-20260506-WA0119.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Robe blanche" data-price="25">
+    <img src="../Images/IMG-20260506-WA0122.jpg">
+    <h4>Robe blanche</h4>
+    <p>25$</p>
+    <button onclick="addToCart('robe blanche',25,'../Images/IMG-20260506-WA0122.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="@@@@@@" data-price="50">
+    <img src="../Images/IMG-20260506-WA0073.jpg">
+    <h4>@@@@@@</h4>
+    <p>50$</p>
+    <button onclick="addToCart('@@@@@@',50,'../Images/IMG-20260506-WA0073.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Robeata-price="30">
+    <img src="../Images/../Images/IMG-20260506-WA0130.jpg">
+    <h4>Robe</h4>
+    <p>30$</p>
+    <button onclick="addToCart('Robe',30,'../Images/IMG-20260506-WA0130.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Robe de n" data-price="25">
+    <img src="../Images/IMG-20260505-WA0020.jpg">
+    <h4>Robe de n</h4>
+    <p>25$</p>
+    <button onclick="addToCart('Robede n',25,'../Images/IMG-20260505-WA0020.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Lix" data-price="50">
+    <img src="../Images/IMG-20260505-WA0024.jpg">
+    <h4>Lix</h4>
+    <p>50$</p>
+    <button onclick="addToCart('Lix',50,'../Images/IMG-20260505-WA0024.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Ensemble" data-price="30">
+    <img src="../Images/IMG-20260505-WA0029.jpg">
+    <h4>Ensemble</h4>
+    <p>30$</p>
+    <button onclick="addToCart('Ensemble',30,'../Images/IMG-20260505-WA0029.jpg')">Ajouter au panier</button>
+  </div>
+
+   <div class="product" data-name="Robe djine" data-price="30">
+    <img src="../Images/IMG-20260505-WA0046.jpg">
+    <h4>Robe djine</h4>
+    <p>30$</p>
+    <button onclick="addToCart('Robe djine',30,'../Images/IMG-20260329-WA0046.jpg')">Ajouter au panier</button>
+  </div>
+
+   <div class="product" data-name="Robe" data-price="30">
+    <img src="../Images/IMG-20260505-WA0045.jpg">
+    <h4>Robe</h4>
+    <p>30$</p>
+    <button onclick="addToCart('Robe',30,'../Images/IMG-20260505-WA0045.jpg')">Ajouter au panier</button>
+  </div>
+
+   <div class="product" data-name="Robe" data-price="30">
+    <img src="../Images/IMG-20260505-WA0055.jpg">
+    <h4>Robe</h4>
+    <p>30$</p>
+    <button onclick="addToCart('Robe',30,'../Images/IMG-20260505-WA0055.jpg')">Ajouter au panier</button>
+  </div>
+
+</section>
+
+<h2 class="titre-produit">Robe élégante</h2>
+<section class="products" id="product-list">
+
+  <div class="product" data-name="multicolor" data-price="35">
+    <img src="../Images/IMG-20260506-WA0088.jpg">
+    <h4>Multicolor</h4>
+    <p>35$</p>
+    <button onclick="addToCart('Multicolor',35,'../Images/IMG-20260506-WA0088.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="@@@@@@" data-price="45">
+    <img src="../Images/IMG-20260506-WA0089.jpg">
+    <h4>@@@@@@</h4>
+    <p>45$</p>
+    <button onclick="addToCart('@@@@@@@',45,'../Images/IMG-20260506-WA0089.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Robe" data-price="30">
+    <img src="../Images/IMG-20260506-WA0068.jpg">
+    <h4>Robe</h4>
+    <p>30$</p>
+    <button onclick="addToCart('Robe',30,'../Images/IMG-20260506-WA0068.jpg')">Ajouter au panier</button>
+  </div>
+
+    <div class="product" data-name="Robe" data-price="30">
+    <img src="../Images/IMG-20260505-WA0058.jpg">
+    <h4>Robe</h4>
+    <p>30$</p>
+    <button onclick="addToCart('Robe',30,'../Images/IMG-20260505-WA0058.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Robe" data-price="25">
+    <img src="../Images/IMG-20260506-WA0067.jpg">
+    <h4>Robe</h4>
+    <p>25$</p>
+    <button onclick="addToCart('Robe',25,'../Images/IMG-20260506-WA0067.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Ensemble" data-price="50">
+    <img src="../Images/IMG-20260506-WA0051.jpg">
+    <h4>Ensemble</h4>
+    <p>50$</p>
+    <button onclick="addToCart('Ensemble',50,'../Images/IMG-20260506-WA0051.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Ensemble" data-price="30">
+    <img src="../Images/IMG-20260506-WA0055.jpg">
+    <h4>Ensemble</h4>
+    <p>30$</p>
+    <button onclick="addToCart('Ensemble',30,'../Images/IMG-20260506-WA0055.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Robe" data-price="50">
+    <img src="../Images/IMG-20260506-WA0030.jpg">
+    <h4>Robe</h4>
+    <p>50$</p>
+    <button onclick="addToCart('Robe',50,'../Images/IMG-20260506-WA0030.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Robe" data-price="30">
+    <img src="../Images/IMG-20260506-WA0012.jpg">
+    <h4>Robe</h4>
+    <p>30$</p>
+    <button onclick="addToCart('Robe',30,'../Images/IMG-20260506-WA0012.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Jupe" data-price="50">
+    <img src="../Images/IMG-20260505-WA0064.jpg">
+    <h4>Jupe</h4>
+    <p>50$</p>
+    <button onclick="addToCart('Jupe',50,'../Images/IMG-20260505-WA0064.jpg')">Ajouter au panier</button>
+  </div>
+
+  <div class="product" data-name="Complet" data-price="30">
+    <img src="../Images/IMG-20260505-WA0067.jpg">
+    <h4>Complet</h4>
+    <p>30$</p>
+    <button onclick="addToCart('Complet',30,'../Images/IMG-20260505-WA0067.jpg')">Ajouter au panier</button>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <div>
+      <a href="about.html"><h4>À propos</h4></a>
+      <a href="qui-sommes-nous.html"> <p>Qui sommes-nous</p></a>
+      <a href="carriere.html"><p>Carrières</p></a>
+    </div>
+    </div>
+
+    <div>
+      <a href="aide.html"> <h4>Aide</h4></a>
+     <a href="Livraison.html"><p>Livraison</p></a>
+      <p>Retours</p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>Email : gilbertshonganya@gmail.com</p>
+      <p>Téléphone : +243 816945259</p>
+    </div>
+  </div>
+
+  <p class="copyright">© 2026 ShopPro</p>
+</footer>
+
+<script src="femmes.js"></script>
+</body>
+</html>
