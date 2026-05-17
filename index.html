@@ -12,10 +12,11 @@
 <header class="header">
   <div class="logo">ShopPro</div>
 
-  <div class="search-bar">
-    <input type="text" placeholder="Rechercher un produit...">
-    <button>🔍</button>
-  </div>
+<div class="search-bar">
+  <input
+  type="text" id="searchInput" placeholder="Rechercher un produit..." onkeyup="searchProducts()">
+  <button>🔍</button>
+</div>
 
   <div class="header-icons">
     <span>Catégories</span>
@@ -32,7 +33,7 @@
   <a href="chaussure.html">Chaussures</a>
   <a href="sacs.html">Sac femme</a>
 </nav>
-
+<div id="search-results"></div>
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
@@ -215,6 +216,7 @@
 </footer>
 
 <!-- SCRIPT -->
+<script src="products.js"></script>
 <script src="script.js"></script>
 
 </body>
