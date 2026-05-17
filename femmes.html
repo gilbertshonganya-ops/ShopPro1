@@ -14,8 +14,9 @@
   <div class="logo">ShopPro</div>
 
   <div class="search-bar">
-    <input type="text" id="search" placeholder="Rechercher..." onkeyup="searchProducts()">
-    <button>🔍</button>
+  <input
+  type="text" id="searchInput" placeholder="Rechercher un produit..." onkeyup="searchProducts()">
+  <button>🔍</button>
   </div>
 
   <div class="header-icons">
@@ -32,6 +33,8 @@
   <a href="chaussure.html">Chaussures</a>
   <a href="sacs.html">Sac femme</a>
 </nav>
+
+  <div id="search-results"></div>
 
 <!-- TITRE -->
 
@@ -169,151 +172,7 @@
 
   <div class="product" data-name="Robe blanche" data-price="25">
     <img src="Images/IMG-20260506-WA0122.jpg">
-    <h4>Robe blanche</h4>
-    <p>25$</p>
-    <button onclick="addToCart('robe blanche',25,'Images/IMG-20260506-WA0122.jpg')">Ajouter au panier</button>
-  </div>
 
-  <div class="product" data-name="@@@@@@" data-price="50">
-    <img src="Images/IMG-20260506-WA0073.jpg">
-    <h4>@@@@@@</h4>
-    <p>50$</p>
-    <button onclick="addToCart('@@@@@@',50,'Images/IMG-20260506-WA0073.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Robeata-price="30">
-    <img src="Images/../Images/IMG-20260506-WA0130.jpg">
-    <h4>Robe</h4>
-    <p>30$</p>
-    <button onclick="addToCart('Robe',30,'Images/IMG-20260506-WA0130.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Robe de n" data-price="25">
-    <img src="Images/IMG-20260505-WA0020.jpg">
-    <h4>Robe de n</h4>
-    <p>25$</p>
-    <button onclick="addToCart('Robede n',25,'Images/IMG-20260505-WA0020.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Lix" data-price="50">
-    <img src="Images/IMG-20260505-WA0024.jpg">
-    <h4>Lix</h4>
-    <p>50$</p>
-    <button onclick="addToCart('Lix',50,'Images/IMG-20260505-WA0024.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Ensemble" data-price="30">
-    <img src="Images/IMG-20260505-WA0029.jpg">
-    <h4>Ensemble</h4>
-    <p>30$</p>
-    <button onclick="addToCart('Ensemble',30,'Images/IMG-20260505-WA0029.jpg')">Ajouter au panier</button>
-  </div>
-
-   <div class="product" data-name="Robe djine" data-price="30">
-    <img src="Images/IMG-20260505-WA0046.jpg">
-    <h4>Robe djine</h4>
-    <p>30$</p>
-    <button onclick="addToCart('Robe djine',30,'Images/IMG-20260329-WA0046.jpg')">Ajouter au panier</button>
-  </div>
-
-   <div class="product" data-name="Robe" data-price="30">
-    <img src="Images/IMG-20260505-WA0045.jpg">
-    <h4>Robe</h4>
-    <p>30$</p>
-    <button onclick="addToCart('Robe',30,'Images/IMG-20260505-WA0045.jpg')">Ajouter au panier</button>
-  </div>
-
-   <div class="product" data-name="Robe" data-price="30">
-    <img src="Images/IMG-20260505-WA0055.jpg">
-    <h4>Robe</h4>
-    <p>30$</p>
-    <button onclick="addToCart('Robe',30,'Images/IMG-20260505-WA0055.jpg')">Ajouter au panier</button>
-  </div>
-
-</section>
-</section>
-
-<h2 class="titre-produit">Robe élégante</h2>
-<section class="products" id="product-list">
-
-  <div class="product" data-name="multicolor" data-price="35">
-    <img src="Images/IMG-20260506-WA0088.jpg">
-    <h4>Multicolor</h4>
-    <p>35$</p>
-    <button onclick="addToCart('Multicolor',35,'Images/IMG-20260506-WA0088.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="@@@@@@" data-price="45">
-    <img src="Images/IMG-20260506-WA0089.jpg">
-    <h4>@@@@@@</h4>
-    <p>45$</p>
-    <button onclick="addToCart('@@@@@@@',45,'Images/IMG-20260506-WA0089.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Robe" data-price="30">
-    <img src="Images/IMG-20260506-WA0068.jpg">
-    <h4>Robe</h4>
-    <p>30$</p>
-    <button onclick="addToCart('Robe',30,'Images/IMG-20260506-WA0068.jpg')">Ajouter au panier</button>
-  </div>
-
-    <div class="product" data-name="Robe" data-price="30">
-    <img src="Images/IMG-20260505-WA0058.jpg">
-    <h4>Robe</h4>
-    <p>30$</p>
-    <button onclick="addToCart('Robe',30,'Images/IMG-20260505-WA0058.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Robe" data-price="25">
-    <img src="Images/IMG-20260506-WA0067.jpg">
-    <h4>Robe</h4>
-    <p>25$</p>
-    <button onclick="addToCart('Robe',25,'Images/IMG-20260506-WA0067.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Ensemble" data-price="50">
-    <img src="Images/IMG-20260506-WA0051.jpg">
-    <h4>Ensemble</h4>
-    <p>50$</p>
-    <button onclick="addToCart('Ensemble',50,'Images/IMG-20260506-WA0051.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Ensemble" data-price="30">
-    <img src="Images/IMG-20260506-WA0055.jpg">
-    <h4>Ensemble</h4>
-    <p>30$</p>
-    <button onclick="addToCart('Ensemble',30,'Images/IMG-20260506-WA0055.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Robe" data-price="50">
-    <img src="Images/IMG-20260506-WA0030.jpg">
-    <h4>Robe</h4>
-    <p>50$</p>
-    <button onclick="addToCart('Robe',50,'Images/IMG-20260506-WA0030.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Robe" data-price="30">
-    <img src="Images/IMG-20260506-WA0012.jpg">
-    <h4>Robe</h4>
-    <p>30$</p>
-    <button onclick="addToCart('Robe',30,'Images/IMG-20260506-WA0012.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Jupe" data-price="50">
-    <img src="Images/IMG-20260505-WA0064.jpg">
-    <h4>Jupe</h4>
-    <p>50$</p>
-    <button onclick="addToCart('Jupe',50,'Images/IMG-20260505-WA0064.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Complet" data-price="30">
-    <img src="Images/IMG-20260505-WA0067.jpg">
-    <h4>Complet</h4>
-    <p>30$</p>
-    <button onclick="addToCart('Complet',30,'Images/IMG-20260505-WA0067.jpg')">Ajouter au panier</button>
-  </div>
-
-</section>
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -340,7 +199,8 @@
 
   <p class="copyright">© 2026 ShopPro</p>
 </footer>
-
+<script src="products.js"></script>
 <script src="femmes.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
