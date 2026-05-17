@@ -13,10 +13,11 @@
 <header class="header">
   <div class="logo">ShopPro</div>
 
-  <div class="search-bar">
-    <input type="text" id="search" placeholder="Rechercher..." onkeyup="searchProducts()">
-    <button>🔍</button>
-  </div>
+<div class="search-bar">
+  <input
+  type="text" id="searchInput" placeholder="Rechercher un produit..." onkeyup="searchProducts()">
+  <button>🔍</button>
+</div>
 
   <div class="header-icons">
     <span>Commandes</span>
@@ -33,6 +34,7 @@
   <a href="sacs.html">Sac femme</a>
 </nav>
 
+  <div id="search-results"></div>
 <!-- TITRE -->
 
 <section class="hero-femme">
@@ -191,77 +193,7 @@
     <button onclick="addToCart('veste',35,'Images/IMG-20260506-WA0103.jpg')">Ajouter au panier</button>
   </div>
 
-  <div class="product" data-name="veste" data-price="80">
-    <img src="Images/aaav.jpg">
-    <h4>veste</h4>
-    <p>80$</p>
-    <button onclick="addToCart('veste',80,'Images/aaav.jpg')">Ajouter au panier</button>
-  </div>
 
-  <div class="product" data-name="veste" data-price="200$">
-    <img src="Images/IMG-20260505-WA0052.jpg">
-    <h4>veste</h4>
-    <p>200$</p>
-    <button onclick="addToCart('veste',200,'Images/IMG-20260505-WA0052.jpg')">Ajouter au panier</button>
-  </div>
-
-</section>
-  </section>
-
-<h2 class="titre-produit">POLOS</h2>
-<section class="products" id="product-list">
-
-  <div class="product" data-name="la coste" data-price="20">
-    <img src="Images/IMG-20260329-WA0010.jpg">
-    <h4>La coste</h4>
-    <p>20$</p>
-    <button onclick="addToCart('La coste',20,'Images/IMG-20260329-WA0010.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Polo" data-price="15">
-    <img src="Images/IMG-20260506-WA0064.jpg">
-    <h4>Polo</h4>
-    <p>15$</p>
-    <button onclick="addToCart('Polo',15,'Images/IMG-20260506-WA0064.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Polo" data-price="30">
-    <img src="Images/IMG-20260506-WA0018.jpg">
-    <h4>Polo</h4>
-    <p>30$</p>
-    <button onclick="addToCart('Polo',30,'Images/IMG-20260506-WA0018.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Polo" data-price="30">
-    <img src="Images/IMG-20260506-WA0017.jpg">
-    <h4>Polo</h4>
-    <p>30$</p>
-    <button onclick="addToCart('Polo',30,'Images/IMG-20260506-WA0017.jpg')">Ajouter au panier</button>
-  </div>
-
-
-  <div class="product" data-name="Polo" data-price="25">
-    <img src="Images/IMG-20260505-WA0062.jpg">
-    <h4>Polo</h4>
-    <p>25$</p>
-    <button onclick="addToCart('Polo',25,'Images/IMG-20260505-WA0062.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Polo" data-price="50">
-    <img src="Images/IMG-20260505-WA0033.jpg">
-    <h4>Polo</h4>
-    <p>50$</p>
-    <button onclick="addToCart('Polo',50,'Images/IMG-20260505-WA0033.jpg')">Ajouter au panier</button>
-  </div>
-
-  <div class="product" data-name="Polo" data-price="35">
-    <img src="Images/IMG-20260505-WA0034.jpg">
-    <h4>Polo</h4>
-    <p>35$</p>
-    <button onclick="addToCart('Polo',35,'Images/IMG-20260505-WA0034.jpg')">Ajouter au panier</button>
-  </div>
-
-</section>
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -288,7 +220,8 @@
 
   <p class="copyright">© 2026 ShopPro</p>
 </footer>
-
+<script src="products.js"></script>
 <script src="femmes.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
